@@ -1,0 +1,237 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+/* CSS VARIABLES */
+:root {
+  --bg-color: #191830;
+  --card1-color: #facf29;
+  --card2-color: #02ccfc;
+  --card3-color: #ff3124;
+  --card4-color: #0a2dbb;
+  --seconds-color: #f9d426;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  background: linear-gradient(180deg, #facf29, #ff3124);
+  width: 250px;
+  height: 250px;
+  transform: translateY(130px);
+  border-radius: 400px;
+  margin-right: 140px;
+  animation-name: top-down1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes top-down1 {
+  0% {
+    transform: translateY(130px);
+  }
+  100% {
+    transform: translateY(160px);
+  }
+}
+
+.card2 {
+  background: linear-gradient(180deg, #02ccfc, #0a2dbb);
+  width: 300px;
+  border-radius: 400px;
+  height: 300px;
+  margin-bottom: 270px;
+  margin-left: 140px;
+  animation-name: top-down2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes top-down2 {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+.glass-card {
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 750px;
+  transition: 1s ease-in-out;
+  max-height: 290px;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.059) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: rgba(255, 255, 255, 0.06);
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  animation-name: fade-up;
+  animation-duration: 0.5s;
+}
+
+.hour-card {
+  backdrop-filter: blur(70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.clock-hour {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 120px;
+}
+
+.minute-card {
+  backdrop-filter: blur(70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.clock-minute {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 120px;
+}
+
+.second-card {
+  backdrop-filter: blur(70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.clock-second {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--seconds-color);
+  font-size: 120px;
+}
+
+.colons {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 750px;
+}
+
+.colon1 {
+  margin-right: -11px;
+}
+
+.colon2 {
+  margin-right: 127px;
+}
+
+.colon {
+  font-size: 90px;
+  color: white;
+}
+
+.am-pm-txt {
+  margin: 20px;
+  color: var(--seconds-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.am-pm {
+  backdrop-filter: blur(70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 88px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 850px) {
+  .colon {
+    display: none;
+  }
+  .card1 {
+    width: 200px;
+    margin-right: 10px;
+    height: 200px;
+  }
+  .card2 {
+    width: 200px;
+    margin-left: 10px;
+    height: 200px;
+  }
+  .glass-card {
+    max-height: 550px;
+    max-width: 200px;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .hour-card {
+    width: 130px;
+    height: 130px;
+  }
+  .clock-hour {
+    font-size: 80px;
+  }
+  .minute-card {
+    width: 130px;
+    height: 130px;
+  }
+  .clock-minute {
+    font-size: 80px;
+  }
+  .second-card {
+    width: 130px;
+    height: 130px;
+  }
+  .clock-second {
+    font-size: 80px;
+  }
+}
