@@ -56,6 +56,7 @@ git add .
 ```
 
 **10.** Commit your changes .
+Also you can use Emoji for creating commit message, follow this [GitHub commit Emoji Docs](https://gist.github.com/parmentf/035de27d6ed1dce0b36a) 📚
 
 ```
 git commit -m "Relevant message"
