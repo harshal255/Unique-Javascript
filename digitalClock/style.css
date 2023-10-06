@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Condensed&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-color: #0f0f10;
+  color: white;
+}
+
+#clock {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+}
+
+#am {
+  font-size: 35px;
+  padding-bottom: 75px;
+}
+
+.clocks {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+#minute {
+  border: 3px solid yellow;
+  border-radius: 50%;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+#second {
+  border: 3px solid red;
+  border-radius: 50%;
+  padding: 30px;
+  margin-left: 20px;
+}
+
+#hourss {
+  border: 3px solid orange;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+#second {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+#minute {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+#hourss {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+#am {
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/* for mobile  */
+@media only screen and (min-width: 0px) and (max-width: 449px) {
+  #clock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
