@@ -4,7 +4,7 @@ const generateButton = document.getElementById("generate-button");
 const recipeList = document.getElementById("recipe-list");
 
 
-const spoonacularAPIKey = "28f78619dec84ba09976d7142f3cff9e";
+const spoonacularAPIKey = "Your_Api_Key";
 const spoonacularEndpoint = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${spoonacularAPIKey}&ingredients=`;
 
 // Event listener for the Generate Recipes button
