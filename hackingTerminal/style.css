@@ -1,0 +1,150 @@
+/* FONT IMPORT  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY  */
+body {
+  background: linear-gradient(45deg, #7209b7, #f72585, #7209b7, #f72585);
+  background-size: 700%;
+  background-position: left;
+  background-attachment: fixed;
+  animation-name: colormovinganimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes colormovinganimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.tr-card {
+  background-color: #1e2124;
+  width: 700px;
+  height: 450px;
+  display: flex;
+  transition: 0.5s;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.dots-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.dot-container {
+  display: flex;
+  margin-left: 15px;
+}
+.dots {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.dot-1 {
+  background-color: red;
+}
+
+.dot-2 {
+  background-color: yellow;
+}
+.dot-3 {
+  background-color: yellowgreen;
+}
+.command-area {
+  color: white;
+}
+.run-btn-area {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 20px;
+}
+.runbtn {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.command-area {
+  width: 100%;
+  height: 100%;
+}
+.command-code {
+  color: yellow;
+  margin-left: 20px;
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+}
+.command-area-code {
+  display: flex;
+  align-items: center;
+}
+.command-input {
+  background-color: transparent;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 17px;
+  width: 50%;
+  font-weight: bold;
+  border: none;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+}
+.commands {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+}
+.cm1 {
+  color: greenyellow;
+}
+.cm2 {
+  color: red;
+}
+.cm3 {
+  color: lightskyblue;
+}
+.cm5 {
+  color: coral;
+}
+.cm7 {
+  color: cadetblue;
+}
+.cm8 {
+  color: red;
+}
+/* RESPONSIVE  */
+@media only screen and (max-width: 700px) {
+  .tr-card {
+    background-color: #1e2124;
+    width: 600px;
+    height: 385px;
+  }
+}
