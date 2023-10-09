@@ -23,4 +23,28 @@ export const Projects = [
         author: "Harshal Kahar",
         link: "hackingTerminal/index.html"
     },
+    {
+        id: 4,
+        img: "imgs/randomQuotes.png",
+        topic: "Async javascript & promises",
+        description: "Fetch random Quotes from API",
+        author: "Theurkar Prathamesh Ravindra ",
+        link: "QuoteGenerator/index.html"
+    },
+    {
+        id: 5,
+        img: "imgs/rockPaper.png",
+        topic: "Event Listing & handling",
+        description: "Game",
+        author: "G.Mahesh Krishna",
+        link: "rock-paper-scissors/index.html"
+    },
+    {
+        id: 6,
+        img: "imgs/Calculator.png",
+        topic: "Regular Expression",
+        description: "A digital Calculator for number addition, multiply , substraction, division",
+        author: "Aparna Dubey ",
+        link: "Calculator/index.html"
+    },
 ]
