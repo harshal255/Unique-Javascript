@@ -48,30 +48,31 @@ git checkout -b <your_branch_name>
 ```
 
 **8.** Perform your desired changes to the code base.
+**9.** Add your project Details in project.js file (json file).
 
-**9.** Track your changes:heavy_check_mark: .
+**10.** Track your changes:heavy_check_mark: .
 
 ```
 git add .
 ```
 
-**10.** Commit your changes .
+**11.** Commit your changes .
 Also you can use Emoji for creating commit message, follow this [GitHub commit Emoji Docs](https://gist.github.com/parmentf/035de27d6ed1dce0b36a) 📚
 
 ```
 git commit -m "Relevant message"
 ```
 
-**11.** Push the committed changes in your feature branch to your remote repo.
+**12.** Push the committed changes in your feature branch to your remote repo.
 
 ```
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`.
+**13.** To create a pull request, click on `compare and pull requests`.
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**14.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
-**14.** Click on `Create Pull Request`.
+**15.** Click on `Create Pull Request`.
 
-**15** Congratulations :exclamation: You have made a PR to the Unique-Javascript :boom: . Wait for your submission to be accepted and your PR to be merged.(Hacktoberfest 2023)
+**16** Congratulations :exclamation: You have made a PR to the Unique-Javascript :boom: . Wait for your submission to be accepted and your PR to be merged.(Hacktoberfest 2023)
