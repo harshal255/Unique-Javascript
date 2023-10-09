@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Strong Password Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex items-center justify-center h-screen">
+      <div class="max-w-md w-full bg-white rounded-lg shadow-md">
+        <div class="px-6 py-8">
+          <h1 class="text-3xl font-bold text-center mb-6">
+            Strong Password Generator
+          </h1>
+          <div class="relative mb-6">
+            <input
+              type="text"
+              id="password"
+              readonly
+              class="border border-gray-300 rounded-lg px-4 py-2 text-lg text-center focus:outline-none"
+              placeholder="Generated Password"
+            />
+            <button
+              onclick="copyPassword()"
+              class="absolute right-0 top-0 h-full px-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg"
+            >
+              Copy
+            </button>
+          </div>
+          <button
+            onclick="generatePassword()"
+            class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-lg"
+          >
+            Generate Password
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
