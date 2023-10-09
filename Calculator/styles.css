@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(14, 4, 40);
+    height: 100vh;
+    scroll-behavior: smooth;
+
+}
+.text{
+margin-top: 20px;
+    text-align: center;
+ color: rgb(182, 196, 209);
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cont{
+  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    border: 2px solid peachpuff;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: rgb(14, 4, 40);
+    width: 250px;
+    height: 245px;
+ 
+}
+.in{
+    border: 2px solid gainsboro;
+    padding: 4px;
+    border-radius: 5px;
+}
+input{
+    border: none;
+    color: rgb(217, 217, 227);
+    width: 100%;
+    background-color: rgb(14, 4, 40);
+}
+#num{
+margin-bottom: 4px;
+}
+#ans{
+    margin-bottom: 4px;
+}
+.col.col-3.cal-btn{
+    width: 45px;
+    padding: 3px;
+    margin-left: 14px;
+}
+.bottom{
+    display: flex;
+}
+.row{
+    display: flex;
+}
+
+.cal-btn{
+
+    color: rgb(176, 176, 225);
+    /* border: 1px solid violet; */
+    text-align: center;
+ transition: width 0.5s;
+}
+.cal-btn:hover{
+    background-color:  rgb(14, 4, 40);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px;
+    width:80px;
+    /* width: 20px; */
+}
+
+@media screen  and (max-width:224px){
+    [class*='calc']{
+        height:300px;
+    }
+}
