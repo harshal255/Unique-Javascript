@@ -4,7 +4,7 @@
 }
 
 body{
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(244, 255, 251);
@@ -12,17 +12,37 @@ body{
     font-family: 'EB Garamond', serif;
 }
 .head{
-margin-left: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* margin-left: 170px; */
 margin-top: 30px;
 color: rgb(31, 70, 61);
+border-bottom: 2px solid rgb(37, 59, 52);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 255, 240);
+    width: 600px;
+   margin-top: 25px;
+   padding: 10px;
+   padding-bottom: 40px;
+   border: 2px solid black;
+   border-radius: 15px;
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 #box{
-margin-top: 190px;
+
+margin-top: 120px;
 background-color: rgb(70, 114, 110);
 padding: 25px;
 height:180px;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 border-radius: 10px;
+width: 500px;
 }
 #cel{
     display: flex;
@@ -42,8 +62,8 @@ border-radius: 10px;
     border: none;
     border-radius: 6px;
 padding: 2px;
-background-color: rgba(108, 167, 162, 0.884);
-color: rgb(253, 255, 255);
+background-color: rgba(181, 249, 244, 0.884);
+color: rgb(28, 37, 37);
 font-weight: bold;
 }
 
