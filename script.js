@@ -11,7 +11,7 @@ Projects.forEach((project) => {
 
     // Create the content for the card
     card.innerHTML = `
-    <div class="w-full h-auto overflow-clip">
+    <div class="w-full h-auto overflow-clip cursor-pointer">
         <img src="${project.img}" alt="${project.topic}" class="w-full h-auto hover:scale-125 duration-300 hover:rotate-10" draggable="false">
     </div>
         <h2 class="text-xl font-semibold">Topic for Refer : ${project.topic}</h2>
