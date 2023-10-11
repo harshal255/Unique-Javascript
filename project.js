@@ -47,4 +47,12 @@ export const Projects = [
         author: "Aparna Dubey ",
         link: "Calculator/index.html"
     },
+    {
+        id: 7,
+        img: "imgs/weather.jpeg",
+        topic: "Weather application",
+        description: "A weather application which gives accurate data",
+        author: "Ananta chattapadhyay",
+        link: "Weather-application/index.html"
+    },
 ]
