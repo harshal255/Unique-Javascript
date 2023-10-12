@@ -56,7 +56,7 @@ export const Projects = [
         link: "Weather-application/index.html"
     },
     {
-        id: 7,
+        id: 8,
         img: "imgs/js-clock.png",
         topic: "Clock Application",
         description: "A simple analog javascript clock using HTML, CSS3 and Javascript",
