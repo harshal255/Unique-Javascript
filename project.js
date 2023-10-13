@@ -55,4 +55,12 @@ export const Projects = [
         author: "Ananta chattapadhyay",
         link: "Weather-application/index.html"
     },
+    {
+        id: 8,
+        img: "imgs/js-clock.png",
+        topic: "Clock Application",
+        description: "A simple analog javascript clock using HTML, CSS3 and Javascript",
+        author: "Hijikesh Hijal",
+        link: "js-clock/index.html"
+    }
 ]
