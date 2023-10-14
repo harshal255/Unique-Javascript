@@ -10,16 +10,13 @@ body {
     #e353d4,
     #fb299f,
     #ff0066,
-    #ff5523,
-    #eb9200,
-    #b0c400,
-    #22eb2a
+    #ff5523
   );
   background-size: 700%;
   background-position: left;
   background-attachment: fixed;
   animation-name: colormovinganimation;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
