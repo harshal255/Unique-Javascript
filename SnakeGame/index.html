@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">  
+
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
     <title>SnakeMania - Ek Gaming Katha</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
+
 </head>
+
 <body>
+
     <div class="body">
-        <div id="scoreBox">Score: 0</div>
-        <div id="hiscoreBox">HiScore: 0</div>
+
+        <div class="Popup" id="popup">
+
+            <img src="./img/logo.png" alt="Snake 🐍">
+
+            <div class="Popup-Details">
+
+                <p><span id="pop-status">Oops! Game Over!</span></p>
+
+                <p>Your score : <span id="pop-score">000</span></p>
+
+            </div>
+
+            <button type="button" id="ok" class="btn">Restart</button>
+
+        </div>
+
+        <div id="ScoreBox">
+
+            <div>
+                Score : <span id="nrmlScore">00</span>
+            </div>
+
+            <div>
+                High Score : <span id="highScore">00</span>
+            </div>
+
+        </div>
+
         <div id="board"></div>
     </div>
+
 </body>
+
 <script src="js/index.js"></script>
+
 </html>
