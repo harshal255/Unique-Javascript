@@ -14,21 +14,11 @@
     align-items: center;
 }
 
-#scoreBox{
+#ScoreBox {
     position: absolute;
-    top: 9px;
-    right: 200px;
-    font-size: 39px;
-    font-weight: bold;
-    font-family: 'New Tegomin', serif;
-}
-
-#hiscoreBox{
-    position: absolute;
-    top: 59px;
-    right: 140px;
-    font-size: 39px;
-    font-weight: bold;
+    top: 54px;
+    left: 75%;
+    font-size: 36px;
     font-family: 'New Tegomin', serif;
 }
 

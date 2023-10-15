@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Popup{
+    width: 451px;
+    height: 256px;
+    background: #fff;
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    text-align: center;
+    padding: 10px 10px;
+    visibility: hidden;
+    transition: transform .5s;
+    box-sizing: border-box;
+
+}
+
+.Open-Popup{
+    top: 50%;
+    visibility: visible;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+.Popup img
+{
+    width: 100px;
+    margin-top: -60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 50%);
+}
+
+#pop-status{
+
+    margin: 20px;
+
+}
+
+#ok{
+    background-color: #7c9e01;
+    width: 100%;
+    margin-top: 34px;
+    box-shadow: 5px 5px 5px -2px rgb(0 0 0);
+    border-radius: 0px;
+    margin: 10px 0px;
+    border-radius: 9px;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/* extra */
+
+.Popup-Details{
+    margin: 13px;
+    padding: 11px;
+    font-size: 20px;
+    line-height: 39px;
+    box-sizing: border-box;
+}
+
+#pop-score , #pop-ans{
+    font-weight: 700;
+}
