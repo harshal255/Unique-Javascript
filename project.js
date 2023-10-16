@@ -74,4 +74,14 @@ export const Projects = [
     author: "Hijikesh Hijal",
     link: "js-clock/index.html",
   },
+  {
+    id: 10,
+    img: "imgs/pig-game.png",
+    topic: "pig-game",
+    description:
+      "A simple two player game made using HTML, CSS and Javascript",
+    author: "Jitisha Khede",
+    link: "pig-game/index.html",
+
+  }
 ];
