@@ -83,7 +83,7 @@ export const Projects = [
     author: "Jitisha Khede",
     link: "pig-game/index.html",
 
-  }
+  },
    {
     id: 11,
     img: "imgs/quiz_app.png",
