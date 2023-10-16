@@ -74,8 +74,19 @@ export const Projects = [
     author: "Hijikesh Hijal",
     link: "js-clock/index.html",
   },
+
+   {
+    id: 10,
+    img: "imgs/quiz_app.png",
+    topic: "Quiz App",
+    description:
+      "A quiz app using HTML, CSS and Javascript",
+    author: "Ankita Sikdar",
+    link: "quiz_app/index.html",
+  },
+
   {
-    id: "",
+    id: 11,
     img: "/imgs/StackQueueVisualize.png",
     topic: "Stack Queue Visualize",
     description:
@@ -83,4 +94,5 @@ export const Projects = [
     author: "Rupam Modak (Mapur)",
     link: "/StackQueueVisualize/index.html"
   }
+
 ];
