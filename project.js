@@ -74,4 +74,13 @@ export const Projects = [
     author: "Hijikesh Hijal",
     link: "js-clock/index.html",
   },
+  {
+    id: "",
+    img: "/imgs/StackQueueVisualize.png",
+    topic: "Stack Queue Visualize",
+    description:
+      "Helps us to visualize stack and queue data structures",
+    author: "Rupam Modak (Mapur)",
+    link: "/StackQueueVisualize/index.html"
+  }
 ];
