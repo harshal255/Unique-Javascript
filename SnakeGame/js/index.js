@@ -9,7 +9,7 @@ let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
     { x: 13, y: 15 }
-];
+]; // Initial speed value
 
 let food = { x: 6, y: 7 };
 
@@ -28,6 +28,7 @@ let popScore = document.getElementById("pop-score");
 
 let btnOk = document.getElementById("ok");
 
+const speedControl = document.getElementById('speedControl');
 //  Close popup  //
 
 const Close = () => {
@@ -44,8 +45,12 @@ const Close = () => {
 
 btnOk.addEventListener('click', Close);
 
+speedControl.addEventListener('input', function () {
+    speed = parseInt(speedControl.value);
+    document.getElementById('speedDisplay').innerText = `${speed}`;
+});
 
-// Game Functions
+//Game Functions
 function main(ctime) {
     window.requestAnimationFrame(main);
     // console.log(ctime)
