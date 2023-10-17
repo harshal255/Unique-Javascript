@@ -95,11 +95,20 @@ export const Projects = [
   },
   {
     id: 12,
-    img: "/imgs/StackQueueVisualize.png",
+    img: "imgs/StackQueueVisualize.png",
     topic: "Stack Queue Visualize",
     description:
       "Helps us to visualize stack and queue data structures",
     author: "Rupam Modak (Mapur)",
-    link: "/StackQueueVisualize/index.html"
+    link: "StackQueueVisualize/index.html"
+  },
+  {
+    id: 13,
+    img: "imgs/mini-calender.png",
+    topic: "Mini Calender",
+    description:
+      "The Mini Calendar component is used for calendars in which a user must select a specific date and time using HTML, CSS, JS.",
+    author: "Madhusmita Pradhan",
+    link: "MiniCalender/index.html"
   }
 ];
