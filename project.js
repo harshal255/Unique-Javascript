@@ -110,5 +110,23 @@ export const Projects = [
       "The Mini Calendar component is used for calendars in which a user must select a specific date and time using HTML, CSS, JS.",
     author: "Madhusmita Pradhan",
     link: "MiniCalender/index.html"
+  } ,
+  {
+    id: 14,
+    img: "imgs/TodoLists.png",
+    topic: "Todo List",
+    description:
+      "To-do lists are a list of tasks that an individual needs to complete or accomplish, made using HTML, CSS, JS.",
+    author: "Madhusmita Pradhan",
+    link: "Todo-List/index.html"
+  },
+  {
+    id: 15,
+    img: "imgs/StopWatch.png",
+    topic: "Stopwatch",
+    description:
+      "Stopwatch a time-keeping device that is meant to measure the time elapsed from the start to end of any event, done using HTML, CSS, JS.",
+    author: "Madhusmita Pradhan",
+    link: "Stopwatch/index.html"
   }
 ];
