@@ -36,11 +36,12 @@ function displayProjects() {
             <h2 class="text-xl font-semibold">Topic for Refer : ${project.topic}</h2>
             <p class="text-gray-600">${project.description}</p>
             <div class="flex flex-row justify-between items-center">
-            <span class="text-gray-400">Author: ${project.author}</span>
+            <span class="text-gray-800"> <span class="author-text"> Author: </span>  ${project.author}</span>
                 <img src="./imgs/link.png" class="h-5 w-5 cursor-pointer open-link" data-link="${project.link}" draggable="false"/>
             </div>
         `;
 
+        
         // Append the card to the grid container
         projectContainer.appendChild(card);
     }
@@ -64,7 +65,9 @@ function updatePageButtons() {
     // Create and add page buttons
     for (let i = 1; i <= totalPages; i++) {
         const pageButton = document.createElement("button");
+        
         pageButton.textContent = i;
+        
         pageButton.classList.add(
             "bg-purple-500",
             "text-white",
@@ -77,12 +80,14 @@ function updatePageButtons() {
         // Set the current page button as active
         if (i === currentPage) {
             pageButton.classList.add("bg-purple-200");
+            pageButton.classList.toggle("active-page-btn");
             pageButton.disabled = true;
         }
 
         // Add event listener to handle page navigation
         pageButton.addEventListener("click", () => {
             currentPage = i;
+            pageButton.classList.toggle("active-page-btn");
             displayProjects();
         });
 
