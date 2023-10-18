@@ -100,6 +100,6 @@ export const Projects = [
     description:
       "Helps us to visualize stack and queue data structures",
     author: "Rupam Modak (Mapur)",
-    link: "/StackQueueVisualize/index.html"
+    link: "StackQueueVisualize/index.html"
   }
 ];
