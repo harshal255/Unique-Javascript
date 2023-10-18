@@ -101,6 +101,7 @@ export const Projects = [
       "Helps us to visualize stack and queue data structures",
     author: "Rupam Modak (Mapur)",
     link: "StackQueueVisualize/index.html"
+
   },
   {
     id: 13,
@@ -128,5 +129,6 @@ export const Projects = [
       "Stopwatch a time-keeping device that is meant to measure the time elapsed from the start to end of any event, done using HTML, CSS, JS.",
     author: "Madhusmita Pradhan",
     link: "Stopwatch/index.html"
+
   }
 ];
