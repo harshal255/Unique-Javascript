@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting An Array</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <center>
+      <h1>Sorting An Array</h1>
+    </center>
+
+    <div class="flex-container">
+      <div class="accept-container">
+        <h2>ENTER ELEMENTS TO SORT</h2>
+
+        <input id="accept-nos" type="text" placeholder="Enter Numbers" />
+
+        <button class="button" onclick="sortByBubble()">BubbleSort</button>
+        <button class="button" onclick="acceptInputForMerge()">
+          MergeSort
+        </button>
+        <button class="button" onclick="sortByFunction()">
+          Inbuilt Function
+        </button>
+      </div>
+
+      <div id="bubble-sort">
+        <h3>BUBBLE SORT</h3>
+        <hr />
+        <p id="bubble-ele"></p>
+      </div>
+      <div id="quick-sort">
+        <h3>MERGE SORT</h3>
+        <hr />
+        <p id="merge-ele"></p>
+      </div>
+      <div id="function-sort">
+        <h3>SORT BY BUILT-IN FUNCTION</h3>
+        <hr />
+        <p id="function-ele"></p>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
