@@ -55,3 +55,21 @@ body {
 }
 
 /* ========= update (youtanimstar) end ========= */
+
+h1{
+  font-family: monospace;
+}
+
+.active-page-btn{
+  scale: 1.2;
+  transition: all 0.5s;
+}
+
+.grid{
+  transition: all 0.5s;
+}
+
+.author-text{
+  color: black !important;
+  font-weight: bold;
+}
