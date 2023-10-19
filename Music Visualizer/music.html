@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Visualization</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Music Visualization</h1>
+    <canvas id="visualizer" width="800" height="400"></canvas>
+    <input type="file" accept="audio/*" id="audioInput" onchange="loadAudio()">
+
+    <script>
+        const canvas = document.getElementById('visualizer');
+        const ctx = canvas.getContext('2d');
+        let audioContext, analyser, source, dataArray;
+
+        function loadAudio() {
+            const audioInput = document.getElementById('audioInput');
+            const file = audioInput.files[0];
+            if (file) {
+                const audioURL = URL.createObjectURL(file);
+                const audio = new Audio(audioURL);
+                audio.controls = true;
+                audio.loop = true;
+                document.body.appendChild(audio);
+
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                analyser = audioContext.createAnalyser();
+                source = audioContext.createMediaElementSource(audio);
+                source.connect(analyser);
+                analyser.connect(audioContext.destination);
+
+                analyser.fftSize = 256;
+                const bufferLength = analyser.frequencyBinCount;
+                dataArray = new Uint8Array(bufferLength);
+
+                audio.play();
+
+                draw();
+            }
+        }
+
+        function draw() {
+            analyser.getByteFrequencyData(dataArray);
+
+            ctx.fillStyle = 'rgb(0, 0, 0)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            const barWidth = (canvas.width / dataArray.length) * 2.5;
+            let barHeight;
+            let x = 0;
+
+            for (let i = 0; i < dataArray.length; i++) {
+                barHeight = dataArray[i] * 2;
+
+                ctx.fillStyle = `rgb(${barHeight + 100}, 50, 50)`;
+                ctx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight);
+
+                x += barWidth + 1;
+            }
+
+            requestAnimationFrame(draw);
+        }
+    </script>
+</body>
+</html>

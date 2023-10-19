@@ -130,5 +130,15 @@ export const Projects = [
     author: "Madhusmita Pradhan",
     link: "Stopwatch/index.html"
 
+  },
+  {
+    id: 16,
+    img: "imgs/detective.png",
+    topic: "GitHub Detective",
+    description:
+      "The website displays complete stats of a particular github user, made using HTML, CSS & JS.",
+    author: "Aditya Ray",
+    link: "Github Detective/index.html"
+
   }
 ];
