@@ -141,4 +141,14 @@ export const Projects = [
     link: "Github Detective/index.html"
 
   }
+  {
+    id: 17,
+    img: "imgs/ExpenseTracker.jpg",
+    topic: "Expense Tracker",
+    description:
+      "The website tracks the Expenses by an User, made using HTML, CSS & JS.",
+    author: "Niladitya Kar",
+    link: "ExpenseTracker\index.html"
+
+  }
 ];
