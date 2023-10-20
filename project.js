@@ -140,5 +140,15 @@ export const Projects = [
     author: "Aditya Ray",
     link: "Github Detective/index.html"
 
+  },
+  {
+    id: 17,
+    img: "imgs/whack a mole.png",
+    topic: "Whack A Mole",
+    description:
+      "Whack-A-Mole is an arcade game in which players use a mallet to strike randomly appearing moles from holes in the playing surface, made using HTML, CSS & JS.",
+    author: "Karan Khatri",
+    link: "Whack A Mole/index.html"
+
   }
 ];
