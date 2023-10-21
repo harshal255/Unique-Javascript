@@ -112,3 +112,41 @@ ul .speech.active{
   opacity: 0.7;
   pointer-events: none;
 }
+
+
+#toasts {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+
+.toast.info {
+  color: rebeccapurple;
+  background-color: #fff;
+}
+
+.toast.success {
+  color: #fff;
+  background-color: green;
+}
+
+.toast.error {
+  color: #fff;
+  background-color: red;
+}
+
+.toast.warning {
+  background-color: yellow;
+  color: black;
+}
