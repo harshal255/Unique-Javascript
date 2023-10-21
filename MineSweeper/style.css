@@ -1,0 +1,55 @@
+body {
+  background-color: aliceblue;
+}
+#container {
+  width: fit-content;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+.header {
+  background-color: rgb(152, 152, 207);
+  border: 1px solid rgb(62, 62, 137);
+  height: 3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+  display: inline-flex;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid rgb(62, 62, 137);
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(152, 152, 207);
+  opacity: 0.5;
+}
+.row {
+  display: flex;
+}
+.visited {
+  background-color: rgb(129, 129, 219);
+  opacity: 0.8;
+}
+
+.fa-flag,
+.fa-bomb {
+  color: red;
+}
+
+.icons {
+  font-size: 1.5em;
+  line-height: 0.04167em;
+  vertical-align: -0.125em;
+}
+
+.fa-face-sad-tear {
+  color: brown;
+}

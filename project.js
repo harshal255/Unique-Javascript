@@ -151,4 +151,13 @@ export const Projects = [
     link: "ExpenseTracker/index.html"
 
   }
+
+    img: "imgs/MineSweeper.png",
+    topic: "MineSweeper",
+    description:
+      "Experience classic MineSweeper fun with this web game powered by HTML, CSS, and JavaScript!",
+    author: "Shuhua Liu",
+    link: "MineSweeper/index.html",
+  },
+
 ];
