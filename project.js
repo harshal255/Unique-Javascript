@@ -143,6 +143,15 @@ export const Projects = [
   },
   {
     id: 17,
+    img: "imgs/ExpenseTracker.jpg",
+    topic: "ExpenseTracker",
+    description:
+      "The website tracks the Expenses by an User, made using HTML, CSS & JS.",
+    author: "Niladitya Kar",
+    link: "ExpenseTracker/index.html"
+
+  }
+
     img: "imgs/MineSweeper.png",
     topic: "MineSweeper",
     description:
@@ -150,4 +159,5 @@ export const Projects = [
     author: "Shuhua Liu",
     link: "MineSweeper/index.html",
   },
+
 ];
