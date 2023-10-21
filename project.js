@@ -166,5 +166,13 @@ export const Projects = [
       "The website tracks the Expenses by an User, made using HTML, CSS & JS.",
     author: "Niladitya Kar",
     link: "ExpenseTracker/index.html"
+  },{
+    id: 20,
+    img: "imgs/Voice_Generator.png",
+    topic: "Voice Generator",
+    description:
+       "The website generate different voices bases on the region on giving any text",
+    author: "Sahil Karwani",
+    link: "VoiceGenerator/index.html"
   }
 ];
