@@ -143,21 +143,28 @@ export const Projects = [
   },
   {
     id: 17,
-    img: "imgs/ExpenseTracker.jpg",
-    topic: "ExpenseTracker",
+    img: "imgs/whack a mole.png",
+    topic: "Whack A Mole",
     description:
-      "The website tracks the Expenses by an User, made using HTML, CSS & JS.",
-    author: "Niladitya Kar",
-    link: "ExpenseTracker/index.html"
-
-  }
-
+      "Whack-A-Mole is an arcade game in which players use a mallet to strike randomly appearing moles from holes in the playing surface, made using HTML, CSS & JS.",
+    author: "Karan Khatri",
+    link: "Whack A Mole/index.html"
+  },
+  {
+    id:18,
     img: "imgs/MineSweeper.png",
     topic: "MineSweeper",
     description:
       "Experience classic MineSweeper fun with this web game powered by HTML, CSS, and JavaScript!",
     author: "Shuhua Liu",
     link: "MineSweeper/index.html",
-  },
+  },{
+    id:19,
+    img: "imgs/ExpenseTracker.jpg",
+    topic: "ExpenseTracker",
+    description:
+      "The website tracks the Expenses by an User, made using HTML, CSS & JS.",
+    author: "Niladitya Kar",
+    link: "ExpenseTracker/index.html"
 
 ];
