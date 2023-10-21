@@ -54,6 +54,22 @@ function displayProjects() {
     updatePageButtons();
 }
 
+
+function icons(){
+    // Open a new window when the user clicks the link icon
+    const linkIcons = document.querySelectorAll(".open-link");
+
+    linkIcons.forEach((icon) => {
+        icon.addEventListener("click", (event) => {
+            console.log("Click on open link");
+            console.log(icon);
+            const link = event.target.getAttribute("data-link");
+            openLink(link);
+        });
+    });
+}
+
+
 // Function to create and update page buttons
 function updatePageButtons() {
     // Clear existing page buttons
@@ -89,6 +105,7 @@ function updatePageButtons() {
             currentPage = i;
             pageButton.classList.toggle("active-page-btn");
             displayProjects();
+            icons();
         });
 
         // Append the page button to the container
@@ -101,6 +118,7 @@ prevButton.addEventListener("click", () => {
     if (currentPage > 1) {
         currentPage--;
         displayProjects();
+        icons();
     }
 });
 
@@ -108,17 +126,15 @@ nextButton.addEventListener("click", () => {
     if (currentPage < Math.ceil(Projects.length / projectsPerPage)) {
         currentPage++;
         displayProjects();
+        icons();
     }
 });
 
 // Initial display of projects and page buttons
 displayProjects();
 
-// Open a new window when the user clicks the link icon
-const linkIcons = document.querySelectorAll(".open-link");
-linkIcons.forEach((icon) => {
-    icon.addEventListener("click", (event) => {
-        const link = event.target.getAttribute("data-link");
-        openLink(link);
-    });
-});
+
+
+icons();
+
+
