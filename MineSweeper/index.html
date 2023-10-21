@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MineSweeper</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="./bomb.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/58191e1912.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <h1>MineSweeper</h1>
+        <div class="header">
+          <div id="flag-count">Flags Left: 10</div>
+          <div id="status">
+            <i class="fa-regular fa-face-smile icons"></i>
+            <!-- <i class="fa-solid fa-face-sad-tear icons"></i> -->
+            <!-- <i class="fa-regular fa-face-laugh-squint icons"></i> -->
+          </div>
+          <div id="stopwatch">00:00:00</div>
+        </div>
+        <div id="game-board"></div>
+      </div>
+    </main>
+  </body>
+  <script src="stopwatch.js"></script>
+  <script src="box.js"></script>
+  <script src="main.js"></script>
+</html>
