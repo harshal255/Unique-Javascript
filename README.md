@@ -76,3 +76,8 @@ git push -u origin <your_branch_name>
 **15.** Click on `Create Pull Request`.
 
 **16** Congratulations :exclamation: You have made a PR to the Unique-Javascript :boom: . Wait for your submission to be accepted and your PR to be merged.(Hacktoberfest 2023)
+
+## Thank you guys for Contributing in my repo 🚀🐍🎮
+<a href="https://github.com/harshal255/Unique-Javascript/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=harshal255/Unique-Javascript" />
+</a>
