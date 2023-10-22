@@ -2,18 +2,18 @@ body {
   /* background: linear-gradient(-45deg, #7209b7, #f72585, #7209b7, #f72585); */
   background: linear-gradient(
     45deg,
-    #00dbfb,
-    #00cbff,
-    #00b7ff,
+    #70b1ba,
+    #4898ac,
+    #279fcf,
     #6d9cff,
-    #b477ff,
-    #e353d4,
-    #fb299f,
-    #ff0066,
-    #ff5523,
-    #eb9200,
-    #b0c400,
-    #22eb2a
+    #a385c7,
+    #f0b1e98c,
+    #927786,
+    #c8a94c,
+    #c38f69,
+    #b7b255,
+    #878f3e,
+    #c9cf95
   );
   background-size: 700%;
   background-position: left;
@@ -50,8 +50,34 @@ body {
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #AB6EF7;	
+	background-color: #000000;	
 	
+}
+
+/* navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #6a6a6a;
 }
 
 /* ========= update (youtanimstar) end ========= */
