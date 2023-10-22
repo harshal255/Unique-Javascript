@@ -39,7 +39,7 @@ function displayProjects(cfalg) {
     
   } else {
     RenderedProjects = Projects.filter(function (project) {
-      return project.description.toLowerCase().includes(keyword);
+      return (project.description.toLowerCase().includes(keyword) || project.topic.toLowerCase().includes(keyword));
     });
     appendProjects(RenderedProjects);
   }
