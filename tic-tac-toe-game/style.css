@@ -1,0 +1,115 @@
+.posJogo {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 38px ;
+    justify-content: center;
+    align-items: center;
+    font-family: red hat display;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#jogo {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-left: 600px;
+  
+    
+}
+
+#pos1 {
+     border-right: 1px solid black;
+     border-bottom: 1px solid black;
+     border-left: none;
+     border-top: none;
+}
+
+#pos2 {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 0;
+}
+
+#pos3 {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-right: none;
+}
+
+#pos4 {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 0;
+}
+
+#pos5 {
+    border: 1px solid black;
+}
+
+#pos6 {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 0;
+}
+
+#pos7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+#pos8 {
+    border-bottom: none;
+}
+
+#pos9 {
+    border-bottom: none;
+    border-right: none;
+}
+
+#jogador {
+    font-family: Red Hat Display
+}
+
+
+#reset-button {
+    font-family: red hat display;
+    display: block;
+    text-align: center;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s; 
+}
+
+#reset-button:hover {
+    font-weight: 600;
+}
+
+#reset-button:active {
+    opacity: 0.7;
+}
+
+
+
+#jogador {
+    font-size: 20px;
+}
