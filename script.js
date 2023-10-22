@@ -1,5 +1,5 @@
-import { Projects } from "./project.js";
 import { openLink } from "./openlink.js";
+import { Projects } from "./project.js";
 
 const projectContainer = document.querySelector(".grid"); // Get the grid container element
 const prevButton = document.querySelector(".prev");
@@ -8,6 +8,7 @@ const pageButtonsContainer = document.querySelector(".flex"); // Container for p
 const projectsBtn = document.querySelector(".projectsbtn");
 const gamesBtn = document.querySelector(".gamesbtn");
 const allBtn = document.querySelector(".allbtn");
+const sinput = document.getElementById("search-input");
 let RenderedProjects = Projects;
 const projectsArr = Projects.filter(
   (project) => !project.description.toLowerCase().includes("game")
@@ -20,17 +21,38 @@ const projectsPerPage = 6; // Number of projects to display per page
 let currentPage = 1; // Current page
 
 // Function to display projects for the current page
-function displayProjects() {
+function displayProjects(cfalg) {
   // Clear the project container
   projectContainer.innerHTML = "";
 
+
+  let keyword = sinput.value.toLowerCase();
+  if (keyword === "") {
+
+    if(cfalg === "projects") {
+      appendProjects(projectsArr);
+    } else if(cfalg === "games") {
+      appendProjects(gamesArr);
+    } else {
+      appendProjects(RenderedProjects);
+    }
+    
+  } else {
+    RenderedProjects = Projects.filter(function (project) {
+      return project.description.toLowerCase().includes(keyword);
+    });
+    appendProjects(RenderedProjects);
+  }
+}
+
+function appendProjects(pArray) {
   // Calculate the starting and ending indices for the current page
   const startIndex = (currentPage - 1) * projectsPerPage;
   const endIndex = startIndex + projectsPerPage;
 
-  // Loop through the RenderedProjects array for the current page
-  for (let i = startIndex; i < endIndex && i < RenderedProjects.length; i++) {
-    const project = RenderedProjects[i];
+  // Loop through the Projects array for the current page
+  for (let i = startIndex; i < endIndex && i < pArray.length; i++) {
+    const project = pArray[i];
 
     // Create a card element for each project
     const card = document.createElement("div");
@@ -50,13 +72,13 @@ function displayProjects() {
         <div class="w-full h-auto overflow-clip cursor-pointer">
             <img src="${project.img}" alt="${project.topic}" class="w-full h-[15rem] xl:h-[16.5rem] hover:scale-125 duration-300 hover:rotate-10" draggable="false">
         </div>
-            <h2 class="text-xl font-semibold">Topic for Refer : ${project.topic}</h2>
-            <p class="text-gray-600">${project.description}</p>
-            <div class="flex flex-row justify-between items-center">
-            <span class="text-gray-800"> <span class="author-text"> Author: </span>  ${project.author}</span>
-                <img src="./imgs/link.png" class="h-5 w-5 cursor-pointer open-link" data-link="${project.link}" draggable="false"/>
-            </div>
-        `;
+        <h2 class="text-xl font-semibold">Topic for Refer : ${project.topic}</h2>
+        <p class="text-gray-600">${project.description}</p>
+        <div class="flex flex-row justify-between items-center">
+        <span class="text-gray-800"> <span class="author-text"> Author: </span>  ${project.author}</span>
+            <img src="./imgs/link.png" class="h-5 w-5 cursor-pointer open-link" data-link="${project.link}" draggable="false"/>
+        </div>
+    `;
 
     // Append the card to the grid container
     projectContainer.appendChild(card);
@@ -64,11 +86,12 @@ function displayProjects() {
 
   // Enable or disable pagination buttons based on the current page
   prevButton.disabled = currentPage === 1;
-  nextButton.disabled = endIndex >= RenderedProjects.length;
+  nextButton.disabled = endIndex >= Projects.length;
 
   // Update page buttons
-  updatePageButtons();
+  updatePageButtons(pArray);
 }
+
 
 function icons() {
   // Open a new window when the user clicks the link icon
@@ -85,12 +108,12 @@ function icons() {
 }
 
 // Function to create and update page buttons
-function updatePageButtons() {
+function updatePageButtons(arr) {
   // Clear existing page buttons
   pageButtonsContainer.innerHTML = "";
 
   // Calculate the total number of pages
-  const totalPages = Math.ceil(RenderedProjects.length / projectsPerPage);
+  const totalPages = Math.ceil(arr.length / projectsPerPage);
 
   // Create and add page buttons
   for (let i = 1; i <= totalPages; i++) {
@@ -127,6 +150,9 @@ function updatePageButtons() {
   }
 }
 
+// Add event listener for search bar input
+sinput.addEventListener("keyup", displayProjects);
+
 // Add event listeners for pagination buttons
 prevButton.addEventListener("click", () => {
   if (currentPage > 1) {
@@ -145,18 +171,15 @@ nextButton.addEventListener("click", () => {
 });
 
 projectsBtn.addEventListener("click", () => {
-  RenderedProjects = projectsArr;
-  displayProjects();
+  displayProjects("projects");
 });
 
 gamesBtn.addEventListener("click", () => {
-  RenderedProjects = gamesArr;
-  displayProjects();
+  displayProjects("games");
 });
 
 allBtn.addEventListener("click", () => {
-  RenderedProjects = Projects;
-  displayProjects();
+  displayProjects("all");
 });
 // Initial display of projects and page buttons
 displayProjects();
