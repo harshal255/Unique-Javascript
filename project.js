@@ -176,7 +176,7 @@ export const Projects = [
     link: "VoiceGenerator/index.html"
   },{
     id: 21,
-    img: "img/Hack Among Us.png",
+    img: "imgs/Hack Among Us.png",
     topic: "Hackathon Finder",
     description:
        "This website helps you to find hackathons all over the world",
