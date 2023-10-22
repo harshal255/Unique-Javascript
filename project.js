@@ -181,6 +181,6 @@ export const Projects = [
     description:
        "This website helps you to find hackathons all over the world",
     author: "Abhrajit Gupta",
-    link: "Hackathon-Finder/index.html"
+    link: "HackathonFinder/index.html"
   }
 ];
