@@ -174,5 +174,13 @@ export const Projects = [
        "The website generate different voices bases on the region on giving any text",
     author: "Sahil Karwani",
     link: "VoiceGenerator/index.html"
+  },{
+    id: 21,
+    img: "imgs/Hack Among Us.png",
+    topic: "Hackathon Finder",
+    description:
+       "This website helps you to find hackathons all over the world",
+    author: "Abhrajit Gupta",
+    link: "HackathonFinder/index.html"
   }
 ];
