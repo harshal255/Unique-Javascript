@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labrynth</title>
+  </head>
+  <body>
+
+    <h1 class="title">Maze Generator</h1>
+
+    <div class="complete">
+      <h3>Maze Completed.</h3>
+      <button class="replay" id="submit">Play again</button>
+      <button class="close" id="submit">Close</button>
+    </div>
+    
+      <form id="settings" action="">
+        <p>Maze Size</p>
+        <input id="size" type="number" value="500"/></br>
+        <p>Rows/Columns</p>
+        <input id="number" type="number" value="20" /></br>
+        <input id="submit" type="submit" value="Generate Maze">
+      </form>
+  
+    <canvas class="maze"></canvas>
+
+    <script src="maze.js"></script>
+    <script src="settings.js"></script>
+  </body>
+</html>
