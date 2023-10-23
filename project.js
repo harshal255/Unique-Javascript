@@ -119,7 +119,7 @@ export const Projects = [
     description:
       "To-do lists are a list of tasks that an individual needs to complete or accomplish, made using HTML, CSS, JS.",
     author: "Madhusmita Pradhan",
-    link: "Todo-List/index.html"
+    link: "Todo-Lists/index.html"
   },
   {
     id: 15,
