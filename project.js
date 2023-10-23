@@ -182,5 +182,14 @@ export const Projects = [
        "This website helps you to find hackathons all over the world",
     author: "Abhrajit Gupta",
     link: "HackathonFinder/index.html"
+  },
+  {
+    id: 22,
+    img: "imgs/speech synthesis.png",
+    topic: "Speech Synthesis",
+    description:
+      "Speech synthesis is the artificial production of human speech. I have built it using JavaScript by using the Web Speech API which allows developers to access the native speech synthesis capabilities of a device. The API includes methods for starting and stopping speech, setting the voice and pitch.",
+    author: "Karan Khatri",
+    link: "Speech Synthesis/index.html"
   }
 ];
