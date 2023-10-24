@@ -188,11 +188,82 @@ export const Projects = [
   },
   {
     id: 22,
-    img: "imgs/speech synthesis.png",
+    img: "imgs/speechsynthesis.png",
     topic: "Speech Synthesis",
     description:
       "Speech synthesis is the artificial production of human speech. I have built it using JavaScript by using the Web Speech API which allows developers to access the native speech synthesis capabilities of a device. The API includes methods for starting and stopping speech, setting the voice and pitch.",
     author: "Karan Khatri",
     link: "Speech Synthesis/index.html"
-  }
+  },
+  {
+    id: 23,
+    img: "imgs/alarmclock.png",
+    topic: "Alarm-Clock",
+    description:
+      "simple alarm",
+    author: "Prathamesh Theurkar",
+    link: "Alarm-Clock/index.html",
+    profile: "https://github.com/PrathameshTheurkar",
+  },
+  {
+    id: 24,
+    img: "imgs/blockrunner.png",
+    topic: "Block Runner Game",
+    description:
+      "block runner game",
+    author: "Shalini Singh ",
+    link: "BlockRunnerGame/index.html",
+    profile: "https://github.com/Hypertext-Workaholics",
+  },
+  {
+    id: 25,
+    img: "imgs/bmi.png",
+    topic: "Calculate your BMI",
+    description:
+      "BMI Calculate",
+    author: "Namesh Prakash",
+    link: "BMI-Calculator/index.html",
+    profile: "",
+  },
+  {
+    id: 27,
+    img: "imgs/breakingbad.png",
+    topic: "breaking bad generator",
+    description:
+      "breaking bad generator",
+    author: "Harry Sion Tarigan",
+    link: "BreakingBadQuotesGenerator/index.html",
+    profile: "https://github.com/hawryyy30",
+  },
+  {
+    id: 28,
+    img: "imgs/burgereye.png",
+    topic: "Burger Eye",
+    description:
+      "change eye direction whenever burger position changed",
+    author: "Shalini Singh ",
+    link: "BurgerEye/index.html",
+    profile: "https://github.com/Hypertext-Workaholics",
+  },
+  {
+    id: 29,
+    img: "imgs/passwordgen.png",
+    topic: "Password generator",
+    description:
+      "Generate your password",
+    author: "Muhammad Meganata Adam",
+    link: "CustomPasswordGenerator/index.html",
+    profile: "https://github.com/bangadam",
+  },
+  {
+    id: 30,
+    img: "imgs/dragdrop.png",
+    topic: "Drap drop website",
+    description:
+      "drag drop elements",
+    author: "Piyush patel",
+    link: "Drag-and-drop/index.html",
+    profile: "https://github.com/Piyush07p",
+  },
+ 
 ];

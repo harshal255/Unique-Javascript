@@ -29,14 +29,14 @@ function displayProjects(cfalg) {
   let keyword = sinput.value.toLowerCase();
   if (keyword === "") {
 
-    if(cfalg === "projects") {
+    if (cfalg === "projects") {
       appendProjects(projectsArr);
-    } else if(cfalg === "games") {
+    } else if (cfalg === "games") {
       appendProjects(gamesArr);
     } else {
       appendProjects(RenderedProjects);
     }
-    
+
   } else {
     RenderedProjects = Projects.filter(function (project) {
       return (project.description.toLowerCase().includes(keyword) || project.topic.toLowerCase().includes(keyword));
@@ -72,7 +72,7 @@ function appendProjects(pArray) {
         <div class="w-full h-auto overflow-clip cursor-pointer">
             <img src="${project.img}" alt="${project.topic}" class="w-full h-[15rem] xl:h-[16.5rem] hover:scale-125 duration-300 hover:rotate-10" draggable="false">
         </div>
-        <h2 class="text-xl font-semibold">Topic for Refer : ${project.topic}</h2>
+        <h2 class="text-xl font-semibold">Title : ${project.topic}</h2>
         <p class="text-gray-600">${project.description}</p>
         <div class="flex flex-row justify-between items-center">
         <span class="text-gray-800"> <span class="author-text"> Author: </span>  ${project.author}</span>
