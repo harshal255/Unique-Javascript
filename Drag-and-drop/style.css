@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header input{
+    width: 14rem;
+    height: 2rem;
+    margin: 1rem;
+}
+header button{
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.drag_sec{
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: #fff;
+}
+.drag_sec main {
+    display: flex;
+}
+.drag_sec main div{
+    border: 2px dashed red;
+    min-width: 14rem;
+    margin: 2rem;
+    min-height: 18rem;
+}
+.list{
+    border: 2px solid #fff;
+    width: 90%;
+    height: 2.4rem;
+    margin: 1rem;
+    cursor:grab;
+    color: #fff;
+    box-sizing: border-box;
+    padding:0.5rem 1rem;
+
+}
