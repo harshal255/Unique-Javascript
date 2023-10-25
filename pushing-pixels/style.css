@@ -1,0 +1,45 @@
+ body			{ background:#3B4D61 url(bg.jpg) repeat 0 0; margin:0; padding:0; }
+ h1				{ font:bold 35px Tahoma, Helvetica, Arial, Sans-Serif; text-align:center; color:#1F2F3F; text-shadow:0px 2px 2px #74818F; }
+ h2, a#home,
+ a#tutorial		{ display:block; font:bold 15px/10px Tahoma, Helvetica, Arial, Sans-Serif; text-align:center; }
+ h2				{ color:#D1D8DF; }
+ a#home,
+ a#tutorial		{ text-decoration:none; font-size:11px; font-weight:300; padding-bottom:14px; color:#6F777F; z-index:999; }
+ a#home:hover,
+ a#tutorial:hover{ color:#BFDEFF; }
+ 
+ 
+ #infobox		{ position:absolute; width:300px; bottom:20px; left:50%; margin-left:-150px; padding:0 20px; background:rgba(0,0,0,0.5); -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; z-index:999; }
+ 
+ #switch			{ position:absolute; width:80px; height:120px; bottom:50px; left:50px; background:url(light-switch.png) no-repeat -80px 0; cursor:pointer; z-index:100; }
+ #light-bulb		{ position:absolute; width:150px; height:150px; top:20%; left:70%; background:url(lightbulb.png) no-repeat -150px 0; cursor:move; z-index:800; }
+ #light-bulb2	{ width:150px; height:150px; background:url(lightbulb.png) no-repeat 0 0; cursor:move;}
+ #logo			{ position:absolute; width:450px; height:150px; top:40%; left: 30%; background:url(logo.png) no-repeat 0 0; cursor:move; z-index:700; }
+ #logosh			{ position:absolute; width:450px; height:150px; top:40.5%; left: 29.5%; background:url(logo-shadow.png) no-repeat 0 0; z-index:600; }
+ 
+ 
+ /* nothing important below this line! */ 
+ 
+ 
+ #tabs ul                            { position:relative; list-style:none; text-align:center; margin:20px auto 0; padding:0; float:left; left:50%; }
+ #tabs ul li                         { position:relative; float:left; right:50%; font-size:12px; font-family:sans-serif; }
+ #tabs ul li a                       { opacity:.5; text-decoration:none; color:#fff; font-weight:900; letter-spacing:0.05em; padding:3px 15px; margin:0 10px; background:#1F2F3F; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
+ #tabs ul li a:focus                 { outline:none; }
+ #tabs ul li.ui-tabs-selected a      { color:#BFDEFF; opacity:1; }
+ #tabs ul li:hover a                 { opacity:1;}
+ .ui-tabs .ui-tabs-hide              { display:none; }
+ .texttab                            { position:absolute; top:210px; left:50%; margin-left:-270px; width:500px; padding:5px 20px 15px; background:rgba(0,0,0,0.5); color:#fff; z-index:999; font: 12px/15px Tahoma, Helvetica, Arial, Sans-Serif; -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; }
+ .texttab h2                         { color:#BFDEFF; font-size:20px; border-bottom:1px solid #BFDEFF; padding:0 0 10px 0; }
+ .texttab a                          { text-decoration:none;  color:#BFDEFF; }
+ .texttab a:hover                    { border-bottom:1px solid #BFDEFF; }
+ 
+ 
+ pre.sh              { overflow:auto; width:500px; color:#559bd3; background:#0F192A; font-family:monospace; font-size:11px; }
+ pre.sh .odd         { background:#253E5A; }
+ pre.sh .evn         { background:#0F192A; }
+ pre.sh .odd,
+ pre.sh .evn         { display:inline-block; width:800px; height:20px; line-height:20px; }
+ pre.sh .function    { color:#B43231; font-weight:900;}
+ pre.sh .green       { color:#229915; font-weight:900;}
+ pre.sh .pink        { color:#f0f; font-weight:900; }
+ pre.sh .orange      { color:#f08047; font-weight:900; }
