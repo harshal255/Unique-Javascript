@@ -266,6 +266,7 @@ export const Projects = [
     profile: "https://github.com/Piyush07p",
   },
   {
+
     id:31,
     img: "imgs/SpinningWheelGame.png",
     topic: "Spin Wheel Game",
@@ -275,5 +276,15 @@ export const Projects = [
     link: "SpinWheel/index.html",
     profile: "https://github.com/Divyanshi014"
   },
- 
+  {
+    id: 32,
+    img: "imgs/pushing-pixels.png",
+    topic: "Pushing Pixels",
+    description:
+      "Displaying Dynamic shadow position and opacity for an image corresponding to the light source.",
+    author: "Avi Kathuria",
+    link: "PushingPixels/index.html",
+    profile: "https://github.com/Kathuria",
+  },
+
 ];

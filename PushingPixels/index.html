@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Dynamic PNG shadow position &amp; opacity with jQuery</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="title" content="Dynamic PNG shadow position & opacity with jQuery">
+		<meta name="keywords" content="webdesign, webdevelopment, webdev, programming, coding, web-dev, daniel, kurdoghlian, dynamic, shadow, position, opacity, png, jquery, css3, html5, javascript, effect, effects, fx">
+		<meta name="description" content="Interactive, dynamic PNG shadow opacity and position, depending on the position and distance of the light-source - Build with jQuery by Daniel Kurdoghlian | PushingPixels.at">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="style.css" type="text/css" media="all">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<h1>Dynamic PNG shadow position &amp; opacity  with jQuery</h1>
+
+
+
+		<div id="tabs">
+			<ul>
+				<li><a href="#tab-1">Demo</a></li>
+                <li><a href="#tab-2">Code</a></li>
+                <li><a href="#tab-3">Info</a></li>
+			</ul>
+			<div id="tab-1" class="tab">
+		        <div id="switch"></div>
+		        <div id="light-bulb" class="off"><div id="light-bulb2"></div></div>
+		        <div id="logo"></div>
+		        <div id="logosh"></div>
+		        <div id="infobox">
+		            <h2 id="statustext">Please activate JavaScript!</h2>
+		            <a id="tutorial" href="http://j.mp/9Rbq5T" title="visit the 1stWebDesigner" target="_blank">Tutorial available on 1stWebDesigner</a>
+		        </div>
+			</div>
+            <div id="tab-2" class="texttab ui-tabs-hide">
+                <h2>The Source Code</h2>
+				<p>Below you can see the <strike>magic</strike> interesting part of my script:</p>
+				<p>
+				    <pre class="sh">
+<span class="odd"><span class="function">function</span> moveShadow<span class="green">(){</span></span>
+<span class="evn">    lightX          <span class="green">=</span> parseInt<span class="green">(</span>lightbulb<span class="green">.</span>offset<span class="green">().</span>left<span class="green">) +</span> lightCenterX<span class="green">;</span></span>
+<span class="odd">    lightY          <span class="green">=</span> parseInt<span class="green">(</span>lightbulb<span class="green">.</span>offset<span class="green">().</span>top<span class="green">) +</span> lightCenterY<span class="green">;</span></span>
+<span class="evn">    logoX           <span class="green">=</span> parseInt<span class="green">(</span>logo<span class="green">.</span>offset<span class="green">().</span>left<span class="green">) +</span> logoCenterX<span class="green">;</span></span>
+<span class="odd">    logoY           <span class="green">=</span> parseInt<span class="green">(</span>logo<span class="green">.</span>offset<span class="green">().</span>top<span class="green">) +</span> logoCenterY<span class="green">;</span></span>
+<span class="evn">    distanceX       <span class="green">=</span> logoX <span class="green">-</span> lightX<span class="green">;</span></span>
+<span class="odd">    distanceY       <span class="green">=</span> logoY <span class="green">-</span> lightY<span class="green">;</span></span>
+<span class="evn">    distance        <span class="green">=</span> Math.sqrt<span class="green">(</span>Math<span class="green">.</span>pow<span class="green">(</span>distanceX<span class="green">,</span> <span class="pink">2</span><span class="green">) +</span> Math<span class="green">.</span>pow<span class="green">(</span>distanceY<span class="green">,</span> <span class="pink">2</span><span class="green">));</span></span>
+<span class="odd">    shadowDistance  <span class="green">=</span> distance <span class="green">*</span> shadowOffset<span class="green">;</span></span>
+<span class="evn">    shadowPosLeft   <span class="green">=</span> <span class="green">(</span>distanceX <span class="green">/</span> distance <span class="green">*</span> shadowDistance <span class="green">+</span> lightX <span class="green">-</span> logoShdwCenterX<span class="green">) +</span> <span class="orange">"px"</span><span class="green">;</span></span>
+<span class="odd">    shadowPosTop    <span class="green">=</span> <span class="green">(</span>distanceY <span class="green">/</span> distance <span class="green">*</span> shadowDistance <span class="green">+</span> lightY <span class="green">-</span> logoShdwCenterY<span class="green">) +</span> <span class="orange">"px"</span><span class="green">;</span></span>
+<span class="evn">    logoshadow.css<span class="green">({</span> <span class="orange">"left"</span><span class="green">:</span> shadowPosLeft<span class="green">,</span> <span class="orange">"top"</span><span class="green">:</span> shadowPosTop<span class="green">,</span> <span class="orange">"opacity"</span><span class="green">:</span> setOpacity<span class="green">(</span>shadowDistance<span class="green">) });</span></span>
+<span class="odd"><span class="green">}</span></span></pre>
+				</p>
+				<p>This is, what makes the correct positioning of the shadow &lt;div&gt;. Just assign this function to a dragging event (+ window-resize &amp; load) and you have your dynamic positioning.</p>
+				<p>Just look at the <a href="javascript:location.href = 'view-source:' + location.href;">source code</a> of this page</a>, the <a href="javascript:location.href = 'view-source:https://pushingpixels.at/experiments/dynamic_shadow/script.js';">JavaScript</a> and the <a href="javascript:location.href = 'view-source:https://pushingpixels.at/experiments/dynamic_shadow/style.css';">CSS</a>, to see it in more detail.</p>
+            </div>
+            <div id="tab-3" class="texttab ui-tabs-hide">
+                <h2>Some Explenation</h2>
+                <p>When the light is turned on, the position and opacity of the logo shadow will change dynamically, depending on the position and distance of the light bulb. Don't forget to drag the logo and/or the light bulb around!</p>
+            </div>
+		</div>
+
+	</body>
+</html>
