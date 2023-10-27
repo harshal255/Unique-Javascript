@@ -265,5 +265,14 @@ export const Projects = [
     link: "Drag-and-drop/index.html",
     profile: "https://github.com/Piyush07p",
   },
- 
+  {
+    id: 31,
+    img: "imgs/pushing-pixels.png",
+    topic: "Pushing Pixels",
+    description:
+      "Displaying Dynamic shadow position and opacity for an image corresponding to the light source.",
+    author: "Avi Kathuria",
+    link: "PushingPixels/index.html",
+    profile: "https://github.com/Kathuria",
+  },
 ];
