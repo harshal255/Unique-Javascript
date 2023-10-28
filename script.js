@@ -10,6 +10,7 @@ const gamesBtn = document.querySelector(".gamesbtn");
 const allBtn = document.querySelector(".allbtn");
 const sinput = document.getElementById("search-input");
 let RenderedProjects = Projects;
+
 const projectsArr = Projects.filter(
   (project) => !project.description.toLowerCase().includes("game")
 );
@@ -24,7 +25,6 @@ let currentPage = 1; // Current page
 function displayProjects(cfalg) {
   // Clear the project container
   projectContainer.innerHTML = "";
-
 
   let keyword = sinput.value.toLowerCase();
   if (keyword === "") {
@@ -41,6 +41,7 @@ function displayProjects(cfalg) {
     RenderedProjects = Projects.filter(function (project) {
       return (project.description.toLowerCase().includes(keyword) || project.topic.toLowerCase().includes(keyword));
     });
+   
     appendProjects(RenderedProjects);
   }
 }
@@ -53,7 +54,6 @@ function appendProjects(pArray) {
   // Loop through the Projects array for the current page
   for (let i = startIndex; i < endIndex && i < pArray.length; i++) {
     const project = pArray[i];
-
     // Create a card element for each project
     const card = document.createElement("div");
     card.classList.add(
@@ -80,7 +80,6 @@ function appendProjects(pArray) {
         </div>
     `;
 
-    // Append the card to the grid container
     projectContainer.appendChild(card);
   }
 
