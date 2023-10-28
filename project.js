@@ -266,7 +266,18 @@ export const Projects = [
     profile: "https://github.com/Piyush07p",
   },
   {
-    id: 31,
+
+    id:31,
+    img: "imgs/SpinningWheelGame.png",
+    topic: "Spin Wheel Game",
+    description:
+    "spin wheel to earn money",
+    author: "Divyanshi Gupta",
+    link: "SpinWheel/index.html",
+    profile: "https://github.com/Divyanshi014"
+  },
+  {
+    id: 32,
     img: "imgs/pushing-pixels.png",
     topic: "Pushing Pixels",
     description:
@@ -275,8 +286,9 @@ export const Projects = [
     link: "PushingPixels/index.html",
     profile: "https://github.com/Kathuria",
   },
+
   {
-    id: 32,
+    id: 33,
     img: "imgs/countdown.png",
     topic: "Countdown Timer",
     description:
@@ -284,4 +296,5 @@ export const Projects = [
     author: "Karan Khatri",
     link: "Countdown Timer/index.html"
   }
+
 ];
