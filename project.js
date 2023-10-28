@@ -275,4 +275,13 @@ export const Projects = [
     link: "PushingPixels/index.html",
     profile: "https://github.com/Kathuria",
   },
+  {
+    id: 32,
+    img: "imgs/countdown.png",
+    topic: "Countdown Timer",
+    description:
+      "Created this Countdown Timer using HTML, CSS and JavaScript. In addition to having five fast countdowns of 20 seconds, 5 minutes, 15 minutes, 20 minutes, and 30 minutes, we can also manually set the countdown.",
+    author: "Karan Khatri",
+    link: "Countdown Timer/index.html"
+  }
 ];
