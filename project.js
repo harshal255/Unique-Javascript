@@ -295,6 +295,14 @@ export const Projects = [
       "Created this Countdown Timer using HTML, CSS and JavaScript. In addition to having five fast countdowns of 20 seconds, 5 minutes, 15 minutes, 20 minutes, and 30 minutes, we can also manually set the countdown.",
     author: "Karan Khatri",
     link: "Countdown Timer/index.html"
+  },
+  {
+    id: 34,
+    img: "imgs/moving-eyes.png",
+    topic: "Moving Eyes",
+    description:
+      "I have built this unique animation with javascript and trigonometry. The website previews a really unique animation/javascript trick in which the eyes move with the mouse.",
+    author: "Hamza Ihsan",
+    link: "Moving Eyes/index.html"
   }
-
 ];
