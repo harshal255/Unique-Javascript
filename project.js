@@ -286,7 +286,6 @@ export const Projects = [
     link: "PushingPixels/index.html",
     profile: "https://github.com/Kathuria",
   },
-
   {
     id: 33,
     img: "imgs/countdown.png",
@@ -304,5 +303,14 @@ export const Projects = [
       "I have built this unique animation with javascript and trigonometry. The website previews a really unique animation/javascript trick in which the eyes move with the mouse.",
     author: "Hamza Ihsan",
     link: "Moving Eyes/index.html"
+  },
+  {
+    id: 35,
+    img: "imgs/speech detection.png",
+    topic: "Speech Detection",
+    description:
+      "Transform spoken words into text in real-time using HTML, CSS, and JavaScript for transcription, voice commands, and accessibility.",
+    author: "Karan Khatri",
+    link: "Speech Detection/index.html"
   }
 ];
