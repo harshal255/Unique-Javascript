@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+
+:root{
+    --angle-one: 90deg;
+    --angle-two:90deg;
+}
+.eyes-container{
+    margin-top: 20rem;
+}
+.eye{
+
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50pc;
+    margin-inline: 3rem;
+}
+
+
+.eye1{
+    top: 50%;
+    left:50%;
+    
+}
+
+.eye2{
+    top: 50%;
+    left:25%;
+
+}
+
+.eyeball-holder{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+}
+
+.eyeball-holder.one{
+    transform: rotate(var(--angle-one));
+}
+.eyeball-holder.two{
+    transform: rotate(var(--angle-two));
+}
+.eyeball{
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    
+
+}
