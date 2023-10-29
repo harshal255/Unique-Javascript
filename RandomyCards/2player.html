@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/logo2.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+      </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>RandomyCards</h1>
+    </div>
+    <div class="game">
+        <div id="player-1" class="ply">
+            <div class="number">Cards in Deck : <span id ="p1Cards"></span></div>
+            <img class="deck" src="images/deck.png" alt="Deck of cards">
+            <button class="play" id="p1">Play</button>
+            <button class="Shuffle" id="shuffle-1">Shuffle</button>
+        </div>
+        <div class="middle">
+            
+            <div class="number">Cards in Deck : <span id="middleCards"></span></div>
+            <div id="imageHolder1"></div>
+            <div id="imageHolder2"></div>
+            <div id="turnText">Turn for Player <span id="turnNo">1</span></div>
+        </div>
+        <div id="player-2" class="ply">
+            <div class="number">Cards in Deck : <span id ="p2Cards"></span></div>
+            <img class="deck" src="images/deck.png" alt="Deck of cards">
+            <button class="play" id="p2">Play</button>
+            <button class="Shuffle" id="shuffle-2">Shuffle</button>
+        </div>
+    </div>
+    <!-- <div class = "winner">
+        <h1>
+            
+        </h1>
+    </div> -->
+    <script src="js/p2script.js"></script>
+</body>
+</html>

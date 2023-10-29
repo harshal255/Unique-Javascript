@@ -304,5 +304,14 @@ export const Projects = [
       "I have built this unique animation with javascript and trigonometry. The website previews a really unique animation/javascript trick in which the eyes move with the mouse.",
     author: "Hamza Ihsan",
     link: "Moving Eyes/index.html"
+  },
+  {
+    id: 35,
+    img: "imgs/moving-eyes.png",
+    topic: "Randomy Cards",
+    description:
+      "A card game based on luck and randomness of the cards you got.It has single and 2 player modes.",
+    author: "Teeksha",
+    link: "RandomyCards/index.html"
   }
 ];
