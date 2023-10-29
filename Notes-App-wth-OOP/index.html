@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main>
-        <section>
-    
+    <main class="notes" id="app">
+        <section class="notes__sidebar">
+            <button class="notes__add" type="button">Add Note</button>
+            <section class="notes__list">
+                <article class="notes__list-item notes__list-item--selected">
+                    <h2 class="notes__small-title">Lecture Notes</h2>
+                    <p class="notes__small-body">I learnt nothing today.</p>
+                    <!-- <span class="notes__small-updated">Thursday 3:30pm</span> -->
+                </article>
+            </section>
         </section>
-        <section>
-            <article>
-                <h1 class="note-title">New Note Title</h1>
-                <p class="note-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestias consectetur saepe? Dolorum, dolore officia non, iusto quis quasi quisquam qui quam eligendi explicabo minus enim unde distinctio cum veritatis.</p>
-            </article>
+        <section class="notes__preview">
+            <input class="notes__title" type="text" placeholder="Enter a title...">
+            <textarea class="notes__body">I am the notes body...</textarea>
         </section>
     </main>
     <script src="script.js"></script>
