@@ -41,6 +41,7 @@ body {
 .notes__list-item {
     cursor: pointer;
     padding: .5rem;
+    margin-bottom: .4rem;
 }
 
 .notes__list-item--selected {

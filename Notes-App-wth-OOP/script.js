@@ -8,14 +8,15 @@ class Notes {
 class NotesApp {
     constructor() {
         this.notes = []
+        this.noteText = document.querySelector(".notes__title")
+        this.noteContent = document.querySelector(".notes__body")
         this.loadNotesFromLocalStorage()
         this.attachEventListenerToAddButton()
+        this.attachEventListenerToArticles()
     }
 
     addNewNote() {
-        const noteText = document.querySelector(".notes__title").value
-        const noteContent = document.querySelector(".notes__body").value
-        if(noteText !== "" && noteContent !== "") {
+        if(this.noteText.value !== "" && this.noteContent.value !== "") {
             const newNote = new Notes(noteText, noteContent)
             this.notes.push(newNote)
             this.displayNotes()
@@ -26,6 +27,12 @@ class NotesApp {
 
         document.querySelector(".notes__title").value = ""
         document.querySelector(".notes__body").value = ""
+    }
+
+    previewNote(index) {
+        const selectedNote = this.notes[index]
+        this.noteText.value = selectedNote.text
+        this.noteContent.value = selectedNote.content
     }
 
     displayNotes() {
@@ -59,6 +66,15 @@ class NotesApp {
         const addButton = document.querySelector(".notes__add")
         addButton.addEventListener("click", () => {
             this.addNewNote()
+        })
+    }
+
+    attachEventListenerToArticles() {
+        const noteItems = document.querySelectorAll(".notes__list-item")
+        noteItems.forEach((note, index) => {
+            note.addEventListener("click", () => {
+                this.previewNote(index)
+            })
         })
     }
 }
