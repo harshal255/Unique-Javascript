@@ -21,7 +21,9 @@ body {
     width: 300px;
 }
 
-.notes__add {
+.notes__add,
+.notes__create,
+.notes__save {
     background: #004595;
     border: none;
     border-radius: 7px;
@@ -29,12 +31,14 @@ body {
     cursor: pointer;
     font-size: 1.25em;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     padding: 0.75em 0;
     width: 100%;
 }
 
-.notes__add:hover {
+.notes__add:hover,
+.notes__create:hover,
+.notes__save:hover {
     background: #0029af;
 }
 

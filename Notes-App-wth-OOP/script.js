@@ -8,31 +8,62 @@ class Notes {
 class NotesApp {
     constructor() {
         this.notes = []
-        this.noteText = document.querySelector(".notes__title")
-        this.noteContent = document.querySelector(".notes__body")
+        this.loadApp()
         this.loadNotesFromLocalStorage()
+        
         this.attachEventListenerToAddButton()
         this.attachEventListenerToArticles()
+        this.attachEventListenerToCreateButton()
     }
 
     addNewNote() {
-        if(this.noteText.value !== "" && this.noteContent.value !== "") {
+        const noteText = document.querySelector(".notes__title").value
+        const noteContent = document.querySelector(".notes__body").value
+
+        if(noteText !== "" && noteContent !== "") {
             const newNote = new Notes(noteText, noteContent)
             this.notes.push(newNote)
             this.displayNotes()
+            alert("new note added")
             this.saveNotesToLocalStorage()
         }else {
             alert("Note title or Content is empty")
         }
+    }
 
+    createNote() {
         document.querySelector(".notes__title").value = ""
         document.querySelector(".notes__body").value = ""
     }
 
+    saveEditedNote(index, editedTitle, editedContent) {
+            if (editedTitle.trim() === "" || editedContent.trim() === "") {
+                alert("Title or Content cannot be empty")
+                return;
+            }
+            this.notes[index].text = editedTitle
+            this.notes[index].content = editedContent
+            this.displayNotes()
+            this.saveNotesToLocalStorage()
+            alert("edit saved")
+        
+    }
+
     previewNote(index) {
         const selectedNote = this.notes[index]
-        this.noteText.value = selectedNote.text
-        this.noteContent.value = selectedNote.content
+        document.querySelector(".notes__title").value = selectedNote.text
+        document.querySelector(".notes__body").value = selectedNote.content
+
+        const saveButton = document.querySelector(".notes__save")
+
+        // Remove any existing event listeners on the "Save" button.
+        saveButton.removeEventListener("click", this.saveEditedNote)
+
+        saveButton.addEventListener("click", () => {
+            const editedTitle = document.querySelector(".notes__title").value
+            const editedContent = document.querySelector(".notes__body").value
+            this.saveEditedNote(index, editedTitle, editedContent)
+        })
     }
 
     displayNotes() {
@@ -48,6 +79,23 @@ class NotesApp {
             `
             notesList.appendChild(article)
         })
+    }
+
+    loadApp() {
+        const main = document.querySelector(".notes")
+        main.innerHTML = `
+            <section class="notes__sidebar">
+            <button class="notes__add" type="button">Add To Notes</button>
+            <button class="notes__create" type="button">Create  Note</button>
+            <button class="notes__save" type="button">Save Edit</button>
+            <section class="notes__list"></section>
+        </section>
+
+        <section class="notes__preview">
+            <input class="notes__title" type="text" placeholder="Enter a title...">
+            <textarea class="notes__body">I am the notes body...</textarea>
+        </section>
+        `
     }
 
     saveNotesToLocalStorage() {
@@ -69,14 +117,24 @@ class NotesApp {
         })
     }
 
-    attachEventListenerToArticles() {
-        const noteItems = document.querySelectorAll(".notes__list-item")
-        noteItems.forEach((note, index) => {
-            note.addEventListener("click", () => {
-                this.previewNote(index)
-            })
+    attachEventListenerToCreateButton() {
+        const createButton = document.querySelector(".notes__create")
+        createButton.addEventListener("click", () => {
+            this.createNote()
         })
     }
+
+    attachEventListenerToArticles() {
+        const notesList = document.querySelector(".notes__list")
+
+        notesList.addEventListener("click", (event) => {
+                const noteItem = event.target.closest(".notes__list-item")
+                if (noteItem) {
+                    const index = Array.from(noteItem.parentElement.children).indexOf(noteItem)
+                    this.previewNote(index)
+                }
+            })
+        }
 }
 
 //initialize app
