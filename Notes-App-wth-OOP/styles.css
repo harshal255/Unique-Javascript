@@ -54,6 +54,26 @@ body {
     font-weight: bold;
 }
 
+.article-container {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .5rem .4rem;
+    border-radius: .2rem;
+    background: #004595;
+    color: white;
+}
+
+.delete:hover {
+    background: #0029af;
+}
+
 .notes__small-title,
 .notes__small-updated {
     padding: .5rem;
