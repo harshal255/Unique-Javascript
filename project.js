@@ -306,6 +306,12 @@ export const Projects = [
   },
   {
     id: 35,
+    img: "imgs/moving-eyes.png",
+    topic: "Randomy Cards",
+    description:
+      "A card game based on luck and randomness of the cards you got.It has single and 2 player modes.",
+    author: "Teeksha",
+    link: "RandomyCards/index.html",
     img: "imgs/speech detection.png",
     topic: "Speech Detection",
     description:
