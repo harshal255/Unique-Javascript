@@ -286,7 +286,6 @@ export const Projects = [
     link: "PushingPixels/index.html",
     profile: "https://github.com/Kathuria",
   },
-
   {
     id: 33,
     img: "imgs/countdown.png",
@@ -312,6 +311,12 @@ export const Projects = [
     description:
       "A card game based on luck and randomness of the cards you got.It has single and 2 player modes.",
     author: "Teeksha",
-    link: "RandomyCards/index.html"
+    link: "RandomyCards/index.html",
+    img: "imgs/speech detection.png",
+    topic: "Speech Detection",
+    description:
+      "Transform spoken words into text in real-time using HTML, CSS, and JavaScript for transcription, voice commands, and accessibility.",
+    author: "Karan Khatri",
+    link: "Speech Detection/index.html"
   }
 ];
